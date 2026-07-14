@@ -1,0 +1,26 @@
+{
+  "name": "yummy-menu-bot",
+  "version": "1.0.0",
+  "description": "Bot para consultar el menú del día de varios restaurantes (Jumar, Europa III, ...) desde CLI o Telegram",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "menu": "tsx src/cli.ts",
+    "bot": "tsx src/bot/telegram.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "cli-table3": "^0.6.5",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.30.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/pdf-parse": "^1.1.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
